@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('StartDate');
             $table->date('EndDate');
             $table->time('DriveTiming');
-            $table->string('DriveTitle',200)->after('DriveId');
+            $table->string('DriveTitle',200);
             $table->string('DriveAddress',200);
             $table->enum('DriveStatus',['Coming','Completed','Cancelled']);
             $table->longText('DriveDescription');
