@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('recipient', function (Blueprint $table) {
+        Schema::create('recipients', function (Blueprint $table) {
             $table->increments('RecipientId');
             $table->string('RecipientName',100);
             $table->unsignedInteger('UserId');
@@ -24,8 +24,8 @@ return new class extends Migration
             $table->double('RecipientWeight',2,2);
             $table->double('RecipientHeight',2,2);
             $table->foreign('UserId')->references('UserId')->on('users')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('CityId')->references('CityId')->on('city')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('GroupId')->references('GroupId')->on('bloodgroup')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('CityId')->references('CityId')->on('cities')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('GroupId')->references('GroupId')->on('bloodgroups')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

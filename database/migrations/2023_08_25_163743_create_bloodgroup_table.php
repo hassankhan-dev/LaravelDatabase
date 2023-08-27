@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bloodgroup', function (Blueprint $table) {
+        Schema::create('bloodgroups', function (Blueprint $table) {
             $table->increments("GroupId");
             $table->string("GroupName");
             $table->longText("GroupDescription");
