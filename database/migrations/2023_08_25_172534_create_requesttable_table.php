@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('requesttable', function (Blueprint $table) {
+        Schema::create('requesttables', function (Blueprint $table) {
             $table->increments('RequestId');
             $table->unsignedInteger('RecipientId')->nullable();
             $table->unsignedInteger('DonorId')->nullable();
@@ -22,10 +22,10 @@ return new class extends Migration
             $table->unsignedInteger('CenterId');
             $table->enum('RequestStatus',['pending','confirmed','cancelled']);
             $table->timestamps();
-            $table->foreign('RecipientId')->references('RecipientId')->on('recipient')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('DonorId')->references('DonorId')->on('donor')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('GroupId')->references('GroupId')->on('bloodgroup')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('CenterId')->references('CenterId')->on('bloodcenter')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('RecipientId')->references('RecipientId')->on('recipients')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('DonorId')->references('DonorId')->on('donors')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('GroupId')->references('GroupId')->on('bloodgroups')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('CenterId')->references('CenterId')->on('bloodcenters')->onUpdate('cascade')->onDelete('cascade');
         });
 
         

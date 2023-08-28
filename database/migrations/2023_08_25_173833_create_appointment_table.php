@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('appointment', function (Blueprint $table) {
+        Schema::create('appointments', function (Blueprint $table) {
             $table->increments('AppointmentId');
             $table->unsignedInteger('RequestId');
             $table->date('AppointmentDate');
             $table->enum('AppointmentStatus',['Coming','Confirmed']);
             $table->timestamps();
-            $table->foreign('RequestId')->references('RequestId')->on('requesttable')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('RequestId')->references('RequestId')->on('requesttables')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

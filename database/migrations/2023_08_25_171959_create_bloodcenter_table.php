@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bloodcenter', function (Blueprint $table) {
+        Schema::create('bloodcenters', function (Blueprint $table) {
             $table->increments('CenterId');
             $table->string('CenterName',100);
             $table->string('CenterAdress',200);
             $table->string('CenterContact',50);
             $table->unsignedInteger('CityId');
-            $table->foreign('CityId')->references('CityId')->on('city')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('CityId')->references('CityId')->on('cities')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('UserPassword',500);
             $table->enum('UserStatus',['active','unactive']);
             $table->unsignedInteger('RoleId');
-            $table->foreign('RoleId')->references('RoleId')->on('role')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('RoleId')->references('RoleId')->on('roles')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
 

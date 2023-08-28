@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         // Schema::dropIfExists('donor');
-        Schema::create('donor', function (Blueprint $table) {
+        Schema::create('donors', function (Blueprint $table) {
             $table->increments('DonorId');
             $table->string('DonorName',500);
             $table->unsignedInteger('UserId');
@@ -26,8 +26,8 @@ return new class extends Migration
             $table->double('DonorHeight',2,2);
             $table->timestamps();
             $table->foreign('UserId')->references('UserId')->on('users')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('CityId')->references('CityId')->on('city')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreign('GroupId')->references('GroupId')->on('bloodgroup')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('CityId')->references('CityId')->on('cities')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('GroupId')->references('GroupId')->on('bloodgroups')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

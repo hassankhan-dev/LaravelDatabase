@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('donationdrive', function (Blueprint $table) {
+        Schema::create('donationdrives', function (Blueprint $table) {
             $table->increments('DriveId');
             $table->unsignedInteger('CenterId');
             $table->date('StartDate');
@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('DriveAddress',200);
             $table->enum('DriveStatus',['Coming','Completed','Cancelled']);
             $table->longText('DriveDescription');
-            $table->foreign('CenterId')->references('CenterId')->on('bloodcenter')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('CenterId')->references('CenterId')->on('bloodcenters')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
