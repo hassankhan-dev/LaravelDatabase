@@ -2,31 +2,33 @@
 
 namespace Database\Seeders;
 
-use App\Models\contactus;
+use App\Models\bloodcenter;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 
-class contactusSeeder extends Seeder
+class bloodcenterSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $now = Carbon::now(); 
-        contactus::insert([
+        $now = Carbon::now();
+        bloodcenter::insert([
             [
-                "ContactName"=> "Asim",
-                "ContactEmail"=> "asim@gmail.com",
-                "ContactMessage"=> "hello asim",
+                "CenterName" => "karachi",
+                "CenterAdress" => "abc karachi",
+                "CenterContact" => "12345678901",
+                "CityId" => 1,
                 "created_at" => $now,
                 "updated_at" => $now
             ],
             [
-                "ContactName"=> "khurram",
-                "ContactEmail"=> "khurram@gmail.com",
-                "ContactMessage"=> "hello khurram" ,
+                "CenterName" => "lahore",
+                "CenterAdress" => "abcd lahore",
+                "CenterContact" => "12345678901",
+                "CityId" => 2,
                 "created_at" => $now,
                 "updated_at" => $now
             ]

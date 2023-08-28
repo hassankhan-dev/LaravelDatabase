@@ -1,0 +1,27 @@
+
+[
+{"UserId":"1","UserName":"Khurram","UserEmail":"khurram@gmail.com","UserPassword":"khurram","UserStatus":"active","RoleId":"1"},
+{"UserId":"2","UserName":"testUserTwo","UserEmail":"two@gmail.com","UserPassword":"two","UserStatus":"active","RoleId":"2"},
+{"UserId":"3","UserName":"testUserThree","UserEmail":"three@gmail.com","UserPassword":"three","UserStatus":"active","RoleId":"1"},
+{"UserId":"4","UserName":"dusra","UserEmail":"four@gmail.com","UserPassword":"$2y$10$Gb9pDjXRFJhfC9rpWzFYQeObVbfY7L57c5vuPSqGCrjbqSKunk1kG","UserStatus":"active","RoleId":"1"},
+{"UserId":"5","UserName":"adfdsdf","UserEmail":"any@gmail.com","UserPassword":"$2y$10$jv8zchewW5f2xEp.H69EkukxKqkmK0o4RfGIp.BzuNqUUBkvsOFYu","UserStatus":"active","RoleId":"1"},
+{"UserId":"6","UserName":"jkfsg","UserEmail":"five@gmail.com","UserPassword":"$2y$10$8tvcNQTi.SUv8n1yygIdj.kF2HCf16CXpXZqNiW7KRKUQeGlj2L8u","UserStatus":"active","RoleId":"1"},
+{"UserId":"7","UserName":"Shahid","UserEmail":"shahid@gmail.com","UserPassword":"$2y$10$cdKU0b3JSTM9YReO7kswmODAeoY1JAJqd9JCLFPiMs83xeunSwQnu","UserStatus":"active","RoleId":"1"},
+{"UserId":"8","UserName":"kuchbhi","UserEmail":"anybody@gmail.com","UserPassword":"$2y$10$cYXA1H70n9BPfZObCxLSbeKCZA.VcT6xaKf0vNgWl3DA5vTci90vq","UserStatus":"active","RoleId":"1"},
+{"UserId":"9","UserName":"Sohail Khan","UserEmail":"sohail@gmail.com","UserPassword":"$2y$10$dmubdk\/CkMJQUrYo3m8HBuR85Dken3Ed9uWLqwRjFQdtvXGnQE3GO","UserStatus":"active","RoleId":"1"},
+{"UserId":"10","UserName":"Imran Khan","UserEmail":"imran@gmail.com","UserPassword":"$2y$10$LtH8lgS0Th14r.mMTYAUGu6SoVHUGp4VAMlHIU.T2eda9fFYbNniK","UserStatus":"active","RoleId":"1"},
+{"UserId":"11","UserName":"TestTen","UserEmail":"testten@gmail.com","UserPassword":"$2y$10$wQHDyzdUoRhqTFjnAhHVMukVwXRh.3HnwAOTkuGpRz3y\/yeDYsETO","UserStatus":"active","RoleId":"1"},
+{"UserId":"12","UserName":"TestEleven","UserEmail":"testeleven@gmail.com","UserPassword":"$2y$10$Kksrgkcb3vbg8LQ1XuW9gOpkfeL0koZKNNy..ObkHSGUdzkXCh\/Ou","UserStatus":"active","RoleId":"1"},
+{"UserId":"13","UserName":"TestPerson","UserEmail":"testperson@gmail.com","UserPassword":"$2y$10$lWQsF\/Zml.R5MRhN\/BqWceI\/bPHQP.4zU65t1Lie8IYBAK.6XQG9W","UserStatus":"active","RoleId":"1"},
+{"UserId":"14","UserName":"anotherPerson","UserEmail":"anotherperson@gmail.com","UserPassword":"$2y$10$1JbexJnIpSzkm.sThyovaOxdS8i.Y2fxxzFKi4VnArFQ0\/8WMsocO","UserStatus":"active","RoleId":"1"},
+{"UserId":"15","UserName":"Shahkib","UserEmail":"shahkib@gmail.com","UserPassword":"$2y$10$.XgLo6WBajlrtW5LZunM3uHKo2T9St\/PLFayssmxslgnpVp16ZjWi","UserStatus":"active","RoleId":"1"},
+{"UserId":"16","UserName":"LastTest","UserEmail":"lasttest@gmail.com","UserPassword":"$2y$10$.A907uB3nBHkzv5sroWA4.IlrSSLW1L8rXbq88eLpAIFKhEAmf1tW","UserStatus":"active","RoleId":"1"},
+{"UserId":"17","UserName":"TestRecipient","UserEmail":"testrecipient@gmail.com","UserPassword":"$2y$10$f9YCZPJHdn0YkKJLsx3xuujD6Ks8VRo8SLMhPxOPuYBIrJU1yhO4m","UserStatus":"active","RoleId":"2"},
+{"UserId":"18","UserName":"Usman Khan","UserEmail":"usman@gmail.com","UserPassword":"$2y$10$D2TkU40fFZ9eV38Mw17CJOuhz5BFs81nGsUtvH9s0IoTtvR1a8ufW","UserStatus":"active","RoleId":"1"},
+{"UserId":"19","UserName":"Haider","UserEmail":"haider@gmail.com","UserPassword":"$2y$10$U.zDVHtRdr7\/QEE2a5FTCeJNzywG7wnEJkvbyWRx4A4CKyTxLyQQO","UserStatus":"active","RoleId":"2"},
+{"UserId":"20","UserName":"Humayyun Khan","UserEmail":"humayyun@gmail.com","UserPassword":"$2y$10$Br8D.bsvAxCazXms0C1jOuC4EDr9l\/\/U\/hOstuBsVkfjgi3daHmGG","UserStatus":"active","RoleId":"2"},
+{"UserId":"21","UserName":"Nabeel","UserEmail":"nabeel@gmail.com","UserPassword":"$2y$10$qhggYt43FU8pNkH8eeALQ.hVT1XURLjZkInhNqYEUwYNlVn\/32oh2","UserStatus":"active","RoleId":"2"},
+{"UserId":"22","UserName":"Shahkeeb","UserEmail":"shahkeeb@gmail.com","UserPassword":"$2y$10$FiQ54rIGn4JIwvtIqtJVeOi.1TKej4ktPf6hJsYppyTfjQHf2E8eC","UserStatus":"active","RoleId":"2"},
+{"UserId":"23","UserName":"Admin","UserEmail":"admin@gmail.com","UserPassword":"$2y$10$J8LXc7m6xLEwAeWwOcBy4OwowLWp1f9EtntDJYrsyYx8e61NzvcW.","UserStatus":"active","RoleId":"3"}
+]
+

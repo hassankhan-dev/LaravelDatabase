@@ -21,8 +21,17 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             CitySeeder::class,
-            ContactusSeeder::class,
-            roleSeeder::class
+            roleSeeder::class,
+            notificationSeeder::class,
+            contactusSeeder::class,
+            faqSeeder::class,
+            bloodgroupSeeder::class,
+            userSeeder::class,
+            DonorSeeder::class,
+            bloodcenterSeeder::class,
+            recipientSeeder::class,
+            requesttableSeeder::class
+            
         ]);
     }
 }

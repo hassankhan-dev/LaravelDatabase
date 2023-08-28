@@ -21,8 +21,8 @@ return new class extends Migration
             $table->unsignedInteger('GroupId');
             $table->enum('RecipientGender',['Male','Female']);
             $table->date('RecipientDOB');
-            $table->double('RecipientWeight',2,2);
-            $table->double('RecipientHeight',2,2);
+            $table->integer('RecipientWeight');
+            $table->integer('RecipientHeight');
             $table->foreign('UserId')->references('UserId')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('CityId')->references('CityId')->on('cities')->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('GroupId')->references('GroupId')->on('bloodgroups')->onUpdate('cascade')->onDelete('cascade');

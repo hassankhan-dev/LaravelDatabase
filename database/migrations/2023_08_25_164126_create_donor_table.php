@@ -22,12 +22,13 @@ return new class extends Migration
             $table->unsignedInteger('GroupId');
             $table->enum('DonorGender',['Male','Female']);
             $table->date('DonorDOB');
-            $table->double('DonorWeight',2,2);
-            $table->double('DonorHeight',2,2);
+            $table->integer('DonorWeight');
+            $table->integer('DonorHeight');
             $table->timestamps();
             $table->foreign('UserId')->references('UserId')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('CityId')->references('CityId')->on('cities')->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('GroupId')->references('GroupId')->on('bloodgroups')->onUpdate('cascade')->onDelete('cascade');
+            
         });
     }
 

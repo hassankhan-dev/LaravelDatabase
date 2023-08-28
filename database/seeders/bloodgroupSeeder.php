@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\role;
+use App\Models\bloodgroup;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 
-class roleSeeder extends Seeder
+class bloodgroupSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,22 +15,26 @@ class roleSeeder extends Seeder
     public function run(): void
     {
         $now = Carbon::now();
-        role::insert([
+        bloodgroup::insert([
             [
-                'RoleName'=>'Donor',
+                'GroupName'=>'A+',
+                'GroupDescription'=>'klflsfkdsfjkdsf',
                 'created_at'=>$now,
                 'updated_at'=>$now
             ],
             [
-                'RoleName'=>'Recipient',
+                'GroupName'=>'B+',
+                'GroupDescription'=>'klflsfkdsfjkdsf',
                 'created_at'=>$now,
                 'updated_at'=>$now
             ],
             [
-                'RoleName'=>'Admin',
+                'GroupName'=>'O+',
+                'GroupDescription'=>'klflsfkdsfjkdsf',
                 'created_at'=>$now,
                 'updated_at'=>$now
             ]
+            
         ]);
     }
 }
